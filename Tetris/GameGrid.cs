@@ -2,7 +2,7 @@
 
 namespace Tetris
 {
-    public class Grid
+    public class GameGrid
     {
         private readonly int[,] grid;
         public int Rows { get; }
@@ -13,7 +13,7 @@ namespace Tetris
             set => grid[r, c] = value;
         }
 
-        public Grid(int rows, int columns)
+        public GameGrid(int rows, int columns)
         {
             Rows = rows;
             Columns = columns;
